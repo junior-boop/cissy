@@ -1,0 +1,106 @@
+.line-height-1 {
+    line-height: 1;
+}
+.element1 {
+    font-family: Inter;
+    font-style: normalizeIntegration;
+    line-height: 1;
+}
+
+.ligne2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.ligne2 span:first-child {
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 32px;
+}
+.ligne2 span:last-child{
+    font-family: Inter;
+    display: block;
+    font-style: normalizeIntegration;
+    line-height: 1;
+    @apply font-extrabold text-center;
+
+    background: radial-gradient(128.4% 432.7% at -24.51% 152.14%, #CB01EC 0%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color:transparent;
+}
+
+.ligne3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.ligne3 span {
+    @apply block w-[248px] font-extrabold text-[72px] text-right ;
+    font-family: Inter;
+    font-style: normalizeIntegration;
+    line-height: 1;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 155.22%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color:transparent;
+}
+
+.ligne4 {
+    @apply flex flex-col items-start justify-end h-full ;
+}
+
+.ligne4 span {
+    @apply block w-[298px] font-extrabold text-[72px] text-left  ;
+    font-family: Inter;
+    font-style: normalizeIntegration;
+    line-height: 1;
+
+    background: linear-gradient(130.3deg, #000000 9.21%, rgba(250, 0, 255, 0.47) 72.94%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color:transparent;
+}
+
+.proximite {
+    @apply flex flex-col items-start justify-end h-full ;
+}
+
+.proximite span {
+    @apply block w-[308px] text-[62px] text-left text-[#252B5B] font-extrabold ;
+    font-family: "Inter";
+    font-style: normalizeIntegration;
+    line-height: 1;
+}
+.ligne5 {
+    @apply flex flex-col items-start justify-center h-full ;
+}
+
+.ligne5 span:first-child {
+    
+    line-height: 1;
+    @apply font-bold mb-[12px] text-[32px] w-[250px];
+}
+
+.ligne5 span:last-child {
+    font-family: Inter;
+    font-style: normalizeIntegration;
+    line-height: 1;
+    @apply block font-extrabold text-[48px] text-left ;
+
+    background: radial-gradient(128.4% 432.7% at -24.51% 152.14%, #CB01EC 0%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color:transparent;
+}
