@@ -9,7 +9,7 @@ import Sociaux from '@/components/sociaux';
 export default function Home() {
   return (
     <>
-    <div className='h-[68px]'></div>
+    <div className='h-[72px]'></div>
       <Banniere image = {'/fond.png'} />
 		<main>
 			<div className="text-4xl" style = {{padding : "4rem 0", width : "100%", textAlign : "center", fontWeight : "normal"}}>

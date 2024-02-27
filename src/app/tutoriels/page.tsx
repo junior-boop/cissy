@@ -1,3 +1,4 @@
+'use client'
 import { TitleBar } from "@/components/TitreBar";
 import Videos from "@/components/Videos";
 import Container from "@/components/container";
