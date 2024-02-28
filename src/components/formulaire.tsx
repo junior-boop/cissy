@@ -5,7 +5,7 @@ import { LineMdConfirm } from './icones'
 import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../../firebase/files'  
 
-export default function Formulaire ({ produit }){
+export default function Formulaire ({ produit }:any){
     const [validation, setValidation] = useState(false)
     
     const price = () => {
@@ -15,7 +15,7 @@ export default function Formulaire ({ produit }){
     
 
 
-    const handleSubmit = (e: HTMLFormElement) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault()
 
         const target = e.target
@@ -34,7 +34,7 @@ export default function Formulaire ({ produit }){
         handleCommande(commandes)
     }
 
-    async function handleCommande(commandes){
+    async function handleCommande(commandes : any){
         const headersList = {
             "Accept": "*/*",
             "Authorization": "Bearer EAAUAKVmVtFEBO4ZBi8yTXQnyc51ZCffGwY6w9ZBKNZBItS7GFE9NZBSzhZCShGAiN4kzRYcWSAR7ZC0jQaFAS0ODJhz7ZBDmdCRfpMXSYwhi4grkdAu5tvqOg9IblG7vXMca2NdB04jgX7U638gxuZAwTsFMRSP7TBvCCwIRATOaCFTQv6zpRwWf9mpOV0f2xnxfz",
@@ -57,7 +57,7 @@ export default function Formulaire ({ produit }){
                 const convertOrderToString = () => {
                     let userOrderInString = ''
             
-                    commandes.order.forEach(el => {
+                    commandes.order.forEach((el:any) => {
                         const liste =`${el.number} ${el.name} ${el.total}, `
                         userOrderInString += liste                
                     })
