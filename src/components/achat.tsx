@@ -31,7 +31,7 @@ export default function Achat({data} :any){
 
     const Prices = new Intl.NumberFormat('fr-Fr', { style : 'currency', currency : 'XAF'}).format(newData.amount)
     return(
-        <section className={`bg-white w-full fixed bottom-0 left-0 h-[98dvh] border-t z-[1000] duration-300 transition-all ${visible ? 'translate-y-[0]' : 'translate-y-[100dvh] lg:translate-y-[90dvh]'}`}>
+        <section className={`bg-white w-full fixed bottom-0 left-0 h-[98dvh] border-t z-[1000] duration-300 transition-all ${visible ? 'translate-y-[0]' : 'translate-y-[100dvh] lg:translate-y-[98dvh]'}`}>
             <main className="relative">
                 <button onClick={handleClose} className="absolute top-[-28px] right-0 px-3 py-3 bg-red-100 text-red-700 font-bold rounded-full">
                     <RiCloseFill className="w-6 h-6" />

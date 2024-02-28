@@ -21,7 +21,7 @@ export default function Formulaire ({ produit }:any){
         const target = e.target
         const commandes = {
             order : [produit],
-            amount : price(),
+            amount : produit.amount,
             customer : {
                 name : target.name.value,
                 surname : target.surname.value,
@@ -171,7 +171,12 @@ export default function Formulaire ({ produit }:any){
                         body: bodyContent_1,
                         headers: headersList
                     });
+                    console.log(response.ok)
+                } else {
+                    console.log(await response_2.json())
                 }
+
+                
     
                 setTimeout(() => {
                   setValidation(false)
