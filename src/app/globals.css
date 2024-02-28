@@ -181,3 +181,9 @@ footer * {
   .footer > aside ul a {
 	  text-decoration: none
   }
+
+  .pre {
+	white-space: pre-wrap;
+	padding: 0;
+	font-family: 'Atkinson Hyperlegible';
+}

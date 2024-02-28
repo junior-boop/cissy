@@ -54,3 +54,17 @@ export function RiArrowRightSLine(props: SVGProps<SVGSVGElement>) {
       <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" {...props}><path fill="currentColor" d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z"></path></svg>
     )
 }
+
+
+export function IcBaselinePlus(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"></path></svg>
+  )
+}
+
+
+export function IcBaselineMinus(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M19 12.998H5v-2h14z"></path></svg>
+  )
+}

@@ -18,10 +18,10 @@ export default function Produits({data}: Product){
     return(
         <div className= {`h-auto lg:h-[600px]  lg:min-w-[346px] lg:w-[100%] rounded-xl lg:rounded-[2rem] p-3 lg:p-0`}>
             <div className="flex flex-row gap-4 lg:gap-0 lg:flex-col  h-full">
-                <div className={`lg:bg-slate-500 w-[40%] lg:w-full   aspect-square rounded-sm lg:rounded-2xl overflow-hidden border`}>
+                <div className={`w-[40%] lg:w-full   aspect-square rounded-sm lg:rounded-sm overflow-hidden border`}>
                     <img src={data.images[0]} alt="" className="w-full aspect-square object-cover" />
                 </div>
-                <div className="flex-1 pt-0 lg:pt-4 w-[60%]">
+                <div className="flex-1 pt-0 lg:pt-4 w-[60%] lg:w-full">
                     <div className="line-height-1 text-[18px] lg:text-[20px] font-semibold mb-4">{data.name}</div>
                     <pre className="pre hidden lg:block" style={{whiteSpace : 'pre-line', lineHeight : 1, fontFamily : 'Atkinson Hyperlegible', padding : 0, marginBottom : '16px'}}>
                         {short}

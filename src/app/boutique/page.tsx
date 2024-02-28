@@ -28,6 +28,7 @@ export default async function Boutique (){
     const data : Array<produit> = await getData()
     return (
         <>
+        <div className="h-[72px]"></div>
             <section className="py-[64px]">
                 <Container>
                 <div className="px-4 lg:px-0">
@@ -47,7 +48,7 @@ export default async function Boutique (){
                     </div>
                     <TitleBar titre = "Liste" />
                     <div>
-                        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-[21px] gap-3 w-[92vw] lg:w-full mt-0 mx-auto mb-28">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-[32px] gap-3 w-[92vw] lg:w-full mt-0 mx-auto mb-28">
                             {
                                 data.map((el, key) => <Produits data = {el}  key={key}/>)
                             }
