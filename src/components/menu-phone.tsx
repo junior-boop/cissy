@@ -29,7 +29,7 @@ export default function Menu(){
                         name={'Coiffeuses'} url="/coiffeuses" />
                     <NavLi 
                         icon={<RiInformation2Line className="w-7 h-7" />}
-                        name={'A Propos'} url="/a-propos" />
+                        name={'A Propos'} url="/about" />
                 </ul>
             </div>
         </div>
