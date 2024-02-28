@@ -15,8 +15,8 @@ export default function Tutoriel (){
                 <section className="py-[64px]">
                     <Container>
                         <div className="px-4 lg:px-0">
-                            <div className="text-6xl font-bold">Tutoriel.</div>
-                            <div className="text-6xl">Faites-le vous même.</div>
+                            <div className="text-4xl lg:text-6xl font-bold">Tutoriel.</div>
+                            <div className="text-3xl lg:text-6xl">Faites-le vous même.</div>
                         </div>
                     </Container>
                 </section>

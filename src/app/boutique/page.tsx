@@ -32,8 +32,8 @@ export default async function Boutique (){
             <section className="py-[64px]">
                 <Container>
                 <div className="px-4 lg:px-0">
-                    <div className="text-6xl font-bold">Boutique.</div>
-                    <div className="text-6xl">Achetez auprès des créateurs.</div>
+                    <div className="text-4xl lg:text-6xl font-bold">Boutique.</div>
+                    <div className="text-3xl lg:text-6xl">Achetez auprès des créateurs.</div>
                 </div>
                 </Container>
             </section>
