@@ -4,7 +4,7 @@ import Container from "@/components/container"
 import Gallerie_img from "@/components/gallerie_images"
 import Sociaux from "@/components/sociaux"
 
-async function getData(params : object) {
+async function getData(params) {
     const _url = process.env.URL
     const response = await fetch(_url + '/api/boutique') 
     const data = await response.json()
