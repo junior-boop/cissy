@@ -9,7 +9,7 @@ async function getData(params : object) {
     const response = await fetch(_url + '/api/boutique') 
     const data = await response.json()
 
-    const item = data.filter(el => el.id === params.id)
+    const item = data.filter((el : any) => el.id === params.id)
     const value = {...item[0]}
     value.price = item[0]?.price === undefined ?  0 : parseInt(item[0]?.price)
     const Price = new Intl.NumberFormat('fr-Fr', {style : 'currency', currency : 'XAF'}).format(value?.price)

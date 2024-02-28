@@ -15,8 +15,8 @@ export default function Coiffeuses(){
                 <section className="py-[64px]">
                     <Container>
                         <div className="px-4 lg:px-0">
-                            <div className="text-6xl font-bold">Coiffeuses.</div>
-                            <div className="text-6xl">Prennez contact avec nos professionnelles.</div>
+                            <div className="text-4xl lg:text-6xl font-bold">Coiffeuses.</div>
+                            <div className="text-3xl lg:text-6xl">Prennez contact avec nos professionnelles.</div>
                         </div>
                     </Container>
                 </section>
