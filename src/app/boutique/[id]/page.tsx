@@ -4,7 +4,7 @@ import Container from "@/components/container"
 import Gallerie_img from "@/components/gallerie_images"
 import Sociaux from "@/components/sociaux"
 
-async function getData(params) {
+async function getData(params:any) {
     const _url = process.env.URL
     const response = await fetch(_url + '/api/boutique') 
     const data = await response.json()
@@ -18,7 +18,7 @@ async function getData(params) {
     return {...value, Price}
 }
 
-export default async function BoutiqueItem({params}){
+export default async function BoutiqueItem({params}:any){
 
     const value = await getData(params)
 

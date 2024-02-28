@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Formulaire from "./formulaire"
 import { IcBaselineMinus, IcBaselinePlus, RiCloseFill } from "./icones_ts"
 
-export default function Achat({data}){
+export default function Achat({data} :any){
     const [visible, setVisible] = useState(false)
     const [counter, setCounter] = useState(1)
     const [newData, setNewData] = useState({...data, amount : 0})
